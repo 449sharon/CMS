@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Users } from '../../../app/User';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-signup',
@@ -7,10 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupPage implements OnInit {
 
-  email : string;
-  Password: string;
+  user =  {} as Users;
   
   constructor() { }
+  createRegister(user: Users) {
+
+    
+    firebase.auth().createUserWithEmailAndPassword(user.email, user.password).then((result) => {
+     
+    }).catch(function(error) {
+      let errorCode = error.code;
+      let errorMessage = error.message;
+      // Handle Errors here.
+      let alert = this.alertCtrl.create({
+        title: errorCode,
+        subTitle: errorMessage,
+        buttons: ['Try Again'],
+    })
+    alert.present();
+      
+      // ...
+    });
+
+  }
 
   ngOnInit() {
   }

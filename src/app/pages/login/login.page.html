@@ -1,23 +1,17 @@
 <ion-content>
-<div class="container">
-
-  <div class="loginBox">
-
-      <div class="top">
- <h1 class="H1Text">Login</h1>
-        </div>
-
-        <div class="s">
-            <input type="text" [(ngModel)]="email" placeholder="Email" class="inputs">
-            <input type="text" [(ngModel)]="password" placeholder="Password" class="input">
-          
-        </div>
-        <div class="buttons">
-
-        </div>
-        <button class="loginButton"  (click)="login()">Login</button>
-        <button class="Register" routerLink='/signup'>Create account</button>
-  </div>
-  
-</div>
-</ion-content>
+    <div class="container">
+      <div class="loginBox">
+          <div class="top">
+     <h1 class="H1Text">Login</h1>
+            </div>
+            <div class="s">
+                <input type="text" placeholder="Email" class="inputs">
+                <input type="text" placeholder="Password" class="input">
+            </div>
+            <div class="buttons">
+            </div>
+            <button class="loginButton"  routerLink='/hotel-list'>Login</button>
+            <button class="Register" routerLink='/signup'>Create account</button>
+      </div>
+    </div>
+    </ion-content>

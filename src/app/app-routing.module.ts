@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'hotel-list', loadChildren: './pages/hotel-list/hotel-list.module#HotelListPageModule' },
   { path: 'profile', loadChildren: './pages/profile/profile.module#ProfilePageModule' },
   { path: 'signup', loadChildren: './pages/signup/signup.module#SignupPageModule' },
+  { path: 'room-details', loadChildren: './pages/room-details/room-details.module#RoomDetailsPageModule' },
 ];
 
 @NgModule({

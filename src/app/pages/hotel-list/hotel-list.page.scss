@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 5px;
+    background-color: rgb(253, 253, 253);
 }
 
 .cont{
@@ -9,9 +11,52 @@
     width: 100%;
 }
 
+.Head{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    opacity: 1.4;
+    background-color:  rgb(16, 16, 78);
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.Btn{
+    display: flex;
+    justify-content: flex-end;
+    background-color:  rgb(16, 16, 78);
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+ }
+
+.heade{
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    opacity: 0.2;
+    background-color:  rgb(16, 16, 78);
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    opacity: 1.4;
+    background-color:  rgb(16, 16, 78);
+    text-align: center;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+
 .one{
     width: 50%;
     height: 50%;
+    margin-top: 50px;
 }
 
 .two{
@@ -38,6 +83,7 @@
   }
   .card{
       width: 40%;
+      display: flex;
   }
 
   .one{
